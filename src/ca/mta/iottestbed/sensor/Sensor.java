@@ -1,12 +1,14 @@
 package ca.mta.iottestbed.sensor;
 
 import java.io.IOException;
+import java.net.Socket;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Iterator;
 
 import ca.mta.iottestbed.logger.BufferedLogger;
 import ca.mta.iottestbed.network.Connection;
+import ca.mta.iottestbed.network.Device;
 import ca.mta.iottestbed.network.Listener;
 
 /**
@@ -15,7 +17,7 @@ import ca.mta.iottestbed.network.Listener;
  * @author Hayden Walker
  * @version 2023-06-13
  */
-public class Sensor {
+public class Sensor implements Device {
     
     /**
      * The sensor will listen for information from meters on this port.
