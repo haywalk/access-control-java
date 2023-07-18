@@ -1,14 +1,12 @@
 package ca.mta.iottestbed.arbiter;
 
-import ca.mta.iottestbed.network.Device;
-
 /**
  * Manages access control policies.
  * 
  * @author Hayden Walker
  * @version 2023-07-17
  */
-public interface Arbiter extends Device {
+public interface Arbiter {
     /**
      * Authorize an exchange between two devices.
      * 
@@ -16,5 +14,5 @@ public interface Arbiter extends Device {
      * @param to Device receiving the message.
      * @param command Message to authorize.
      */
-    public boolean auth(Device from, Device to, String command);
+    public boolean isAuthorized(String senderID, String recipientID, String command);
 }

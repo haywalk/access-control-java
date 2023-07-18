@@ -8,7 +8,6 @@ import java.util.Iterator;
 
 import ca.mta.iottestbed.logger.BufferedLogger;
 import ca.mta.iottestbed.network.Connection;
-import ca.mta.iottestbed.network.Device;
 import ca.mta.iottestbed.network.Listener;
 
 /**
@@ -17,7 +16,7 @@ import ca.mta.iottestbed.network.Listener;
  * @author Hayden Walker
  * @version 2023-06-13
  */
-public class Sensor implements Device {
+public class Sensor {
     
     /**
      * The sensor will listen for information from meters on this port.

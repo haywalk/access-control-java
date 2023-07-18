@@ -9,7 +9,6 @@ import ca.mta.iottestbed.logger.BufferedFileLogger;
 import ca.mta.iottestbed.logger.BufferedLogger;
 import ca.mta.iottestbed.logger.Timestamp;
 import ca.mta.iottestbed.network.Connection;
-import ca.mta.iottestbed.network.Device;
 import ca.mta.iottestbed.network.Listener;
 
 /**
@@ -18,7 +17,7 @@ import ca.mta.iottestbed.network.Listener;
  * @author Hayden Walker
  * @version 2023-06-15
  */
-public class Meter implements Device {
+public class Meter {
 
     /**
      * The port that the meter will listen on for information from sensors.
